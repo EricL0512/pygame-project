@@ -1,9 +1,13 @@
 import pygame
+import sys
+import readline
 
 pygame.init()
 screen = pygame.display.set_mode((1920, 1080))
 clock = pygame.time.Clock()
+pygame.display.set_caption("test")
 running = True
+test = pygame.image.load("start.png")
 
 while running:
     for event in pygame.event.get():
@@ -16,7 +20,6 @@ while running:
         running = False
     screen.fill("blue")
     pygame.display.update()
-
     clock.tick(60)
 
 pygame.quit()
