@@ -12,6 +12,7 @@ menu_background = pygame.image.load("menu_background.jpg")
 
 running = True
 while running:
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -21,8 +22,17 @@ while running:
     if keys[pygame.K_e]:  # This will be used to access the menu. These can and will change later but this is a temp.
         running = False
     screen.blit(menu_background, (0, 0))
-    screen.blit(start_button, ((screen.get_width()/2) - (start_button.get_width()/2), (screen.get_height()/2) - (start_button.get_height())/2))
+    screen.blit(start_button, ((screen.get_width() / 2) - (start_button.get_width() / 2),
+                               (screen.get_height() / 2) - (start_button.get_height()) / 2))
+    screen.blit(start_button, ((screen.get_width() / 2) - (start_button.get_width() / 2), #CHANGE TO A DIFFERENT IMAGE LATER
+                               (screen.get_height() / 2) - (start_button.get_height()) / 2 + start_button.get_height() + 50))
+    screen.blit(start_button, ((screen.get_width() / 2) - (start_button.get_width() / 2),
+                               (screen.get_height() / 2) - (start_button.get_height()) / 2 + start_button.get_height() * 2 + 100))
+    screen.blit(start_button, ((screen.get_width() / 2) - (start_button.get_width() / 2),
+                               (screen.get_height() / 2) - (start_button.get_height()) / 2 - start_button.get_height() - 50))
+
     pygame.display.update()
     clock.tick(60)
 
 pygame.quit()
+
