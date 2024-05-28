@@ -44,5 +44,4 @@ class Menu:
             self.clock.tick(60)
             pygame.display.update()
 
-
 Menu().run()
