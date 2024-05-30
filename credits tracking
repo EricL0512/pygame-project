@@ -1,3 +1,19 @@
 images used:
 Black and White buttons that will be switched out later: https://gleao.itch.io/simple-pixel-art-buttons 
 grey background image: https://unsplash.com/photos/a-black-and-white-photo-of-a-wall-YqUeLG7fMr4
+
+Game layout?
+
+fire orbs launched at the player
+fire pits that damage the player
+deadly spinner? use pygame rotation?
+beams shooting out from the center?
+full map coverage instead of the corners?
+full map coverage istead of the center?
+parry ability?
+speed boost?
+lives or hp? - same thing
+left to right map coverage
+right to left map coverage
+pulse effect circle/rectangle?
+Graze points? getting almost hit by an attack spawns damage orbs that you can attack the boss with?
